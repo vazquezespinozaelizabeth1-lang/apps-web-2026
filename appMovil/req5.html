@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cancelación de citas</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cancelación de citas</h1>
+        <p>Sistema para cancelar citas y actualizar su estado.</p>
+    </header>
+
+    <nav>
+        <a href="#cancelar">Cancelar cita</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+    <main>
+
+        <section id="informacion">
+            <h2>Información del sistema</h2>
+
+            <img src="cita.jpg" alt="Cancelación de citas" width="300">
+
+            <p>
+                El sistema permite cancelar una cita y actualizar su estado
+                como cancelada.
+            </p>
+
+            <h3>Estados de una cita</h3>
+
+            <ul>
+                <li>Programada</li>
+                <li>Confirmada</li>
+                <li>Cancelada</li>
+            </ul>
+        </section>
+
+        <section id="cancelar">
+            <h2>Cancelar cita</h2>
+
+            <form>
+                <label for="nombre">Nombre del paciente:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <br><br>
+
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <br><br>
+
+                <label for="hora">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora">
+
+                <br><br>
+
+                <label for="motivo">Motivo de cancelación:</label>
+                <textarea id="motivo" name="motivo"></textarea>
+
+                <br><br>
+
+                <label for="estado">Estado de la cita:</label>
+                <select id="estado" name="estado">
+                    <option value="cancelada">Cancelada</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Cancelar cita">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Cancelación de citas - Prioridad: Alta</p>
+        <a href="https://www.google.com">Más información</a>
+    </footer>
+
+</body>
+
+</html>
+```
